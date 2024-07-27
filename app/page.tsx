@@ -12,7 +12,7 @@ import Myself4 from '../public/myself4-img.jpg'
 import Certificate from '../public/certificate-img.jpg'
 import Myself5 from '../public/myself5-img.jpg'
 import Certificate1 from '../public/certificate1-img.jpg'
-import Project from '../public/project-img.jpg'
+import StudySpace from '../public/StudySpace1.png'
 
 
 export default function Home() {
@@ -124,13 +124,13 @@ export default function Home() {
               </button>
             </div>
             <div className="flex-1">
-              <Image src={Project} alt="" className="w-full h-full object-cover rounded-xl" />
+              <Image src={StudySpace} alt="" className="w-full max-h-96 object-cover rounded-xl" />
             </div>
           </div>
           <br></br>
           <div className="flex items-center justify-between p-8 text-white">
             <div className="flex-shrink-0 w-1/2">
-              <Image src={Project} alt="" className="w-full h-full object-cover rounded-xl" />
+              <Image src={StudySpace} alt="" className="w-full max-h-96 object-cover rounded-xl" />
             </div>            
             <div className="w-1/2 pl-8">
               <h2 className="text-4xl font-serif font-semibold mb-4">FOMO</h2>
