@@ -12,6 +12,7 @@ import Myself4 from '../public/myself4-img.jpg'
 import Certificate from '../public/certificate-img.jpg'
 import Myself5 from '../public/myself5-img.jpg'
 import Certificate1 from '../public/certificate1-img.jpg'
+import Project from '../public/project-img.jpg'
 
 
 export default function Home() {
@@ -26,20 +27,23 @@ export default function Home() {
 
       <main className=" bg-gradient-to-r from-amber-950 to-black px-10">
         <section className="min-h-screen">
-          <nav className="py-10 flex justify-between">
-            <h1 className="text-3xl font-serif">maanitshah.com</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
-              </li>
-              <li><a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+          <nav className="fixed top-0 left-0 w-full py-4 flex justify-between bg-gradient-to-r from-amber-950 to-black z-10 shadow-md">
+            <h1 className="text-2xl font-serif ml-8">Maanit Himanshu Shah.</h1>
+            <ul className="flex space-x-16 items-center pr-44">
+              <li><a href="#about" className="text-white text-lg">About</a></li>
+              <li><a href="#projects" className="text-white text-lg">Projects</a></li>
+              <li><a href="#work" className="text-white text-lg">Work</a></li>
+              <li><a href="#contact" className="text-white text-lg">Contact</a></li>
             </ul>
+            <div className="mr-8 mt-1">
+              <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="#">Resume -></a>
+            </div>
           </nav>
           <div className="text-center p-10">
-            <div className="relative mx-auto w-80 h-80">
-              <Image src={Myself} alt={""} className="rounded-full w-full h-full object-cover"/>
+            <div className="relative mx-auto w-80 h-80 mt-10">
+              <Image src={Myself} alt={""} className="rounded-full"/>
             </div>
-            <h2 className="text-5xl py-2 text-white font-serif">Maanit Himanshu Shah</h2>
+            <h2 className="text-5xl py-2 text-white font-serif">Hello, I am Maanit</h2>
             <h3 className="text-2xl py-0 text-white font-serif">Developer and Designer</h3>
             <p className="text-lg py-4 pl-80 pr-80 leading-8 text-white font-serif">
             A Computer Science and Technology Management student at University of California, Davis, looking for an opportunity in 
@@ -51,7 +55,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-2 text-white font-serif">About Me</h3>
+            <h3 className="text-3xl py-2 text-white font-serif font-semibold">About Me</h3>
             <p className="text-lg py-3 leading-8 text-white font-serif">
             I am a sophomore Computer Science student at the University of California, Davis, with a minor in 
             Tech Management. Passionate about leveraging technology to solve real-world problems, I have 
@@ -59,7 +63,7 @@ export default function Home() {
             such as React Native and Node.js.
             </p>
             <p className="text-lg py-3 leading-8 text-white font-serif">
-            My journey in tech began with internships and hands-on projects, where I gained valuable experience 
+            My journey in tech began with UC Davis coding clubs and hands-on projects, where I gained valuable experience 
             in software development and database management. As the Technical Lead for the Google Developer 
             Student Club, I have honed my leadership skills while collaborating on innovative solutions. I am 
             eager to continue expanding my expertise and contribute to impactful projects.
@@ -106,7 +110,38 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-2 mt-10 text-white font-serif">Projects</h3>
+            <h3 className="text-3xl py-2 mt-10 text-white font-serif font-semibold">Projects</h3>
+          </div>
+          <div className="flex items-center p-8">
+            <div className="flex-1 text-white">
+              <h2 className="text-4xl font-serif font-semibold mb-4">StudySpace</h2>
+              <p className="text-lg mb-6 font-serif">
+              StudySpace attempts to increase the effectiveness of study sessions by offering 
+              rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
+              </p>
+              <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
+                Github →
+              </button>
+            </div>
+            <div className="flex-1">
+              <Image src={Project} alt="" className="w-full h-full object-cover rounded-xl" />
+            </div>
+          </div>
+          <br></br>
+          <div className="flex items-center justify-between p-8 text-white">
+            <div className="flex-shrink-0 w-1/2">
+              <Image src={Project} alt="" className="w-full h-full object-cover rounded-xl" />
+            </div>            
+            <div className="w-1/2 pl-8">
+              <h2 className="text-4xl font-serif font-semibold mb-4">FOMO</h2>
+              <p className="text-lg mb-6 font-serif">
+                StudySpace attempts to increase the effectiveness of study sessions by offering 
+                rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
+              </p>
+              <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
+                Github →
+              </button>
+            </div>
           </div>
         </section>
         <section>
