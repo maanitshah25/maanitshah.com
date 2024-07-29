@@ -38,4 +38,29 @@ body {
   font-style: normal;
 }
 
+.carousel {
+  overflow: hidden;
+  width: 100%; 
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 200s linear infinite;
+}
+
+.carousel-item {
+  width: 550px; 
+  height: 400px; 
+  margin-right: 100px; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
 
