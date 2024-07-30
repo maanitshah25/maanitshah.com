@@ -13,6 +13,7 @@ import Certificate1 from '../public/certificate1-img.jpg'
 import StudySpace from '../public/StudySpace2.png'
 import GDSC from '../public/GDSC-img.jpeg'
 import DC from '../public/DC-img.jpeg'
+import FOMO from '../public/Fomo1.jpg'
 import Cognizant from '../public/Cognizant-img.jpeg'
 import Coursera1 from '../public/Coursera1-img.png'
 import Coursera2 from '../public/Coursera2-img.png'
@@ -122,7 +123,7 @@ export default function Home() {
               rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
-                <a href="https://github.com/maanitshah25/studyspace">Github →</a>
+                <a href="https://github.com/maanitshah25/studyspace">View Project →</a>
               </button>
             </div>
             <div className="flex-col">
@@ -132,7 +133,7 @@ export default function Home() {
           <br></br>
           <div className="bg-gradient-to-r from-black to-amber-950 flex items-center p-6 rounded-lg shadow-lg mb-6">
             <div className="flex-col w-auto">
-              <Image src={StudySpace} alt="" className="w-full max-h-96 object-cover rounded-xl" />
+              <Image src={FOMO} alt="" className="w-full max-h-96 object-cover rounded-xl" />
             </div>            
             <div className="w-1/2 pl-8">
               <h2 className="text-3xl font-serif font-semibold mb-2">FOMO</h2>
@@ -142,7 +143,7 @@ export default function Home() {
                 rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
-                <a href="https://github.com/maanitshah25/Fomo">Github →</a>
+                <a href="https://github.com/maanitshah25/Fomo">View Project →</a>
               </button>
             </div>
           </div>
@@ -156,7 +157,7 @@ export default function Home() {
               rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
-                <a href="https://github.com/maanitshah25/marketplace">Github →</a>
+                <a href="https://github.com/maanitshah25/marketplace">View Project →</a>
               </button>
             </div>
             <div className="flex-col">
