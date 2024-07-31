@@ -10,7 +10,8 @@ import Myself4 from '../public/myself4-img.jpg'
 import Certificate from '../public/certificate-img.jpg'
 import Myself5 from '../public/myself5-img.jpg'
 import Certificate1 from '../public/certificate1-img.jpg'
-import StudySpace from '../public/StudySpace2.png'
+import StudySpace from '../public/StudySpace4.png'
+import Marketplace from '../public/Marketplace.png'
 import GDSC from '../public/GDSC-img.jpeg'
 import DC from '../public/DC-img.jpeg'
 import FOMO from '../public/Fomo1.jpg'
@@ -37,13 +38,13 @@ export default function Home() {
           <nav className="fixed top-0 left-0 w-full py-4 flex justify-between bg-gradient-to-r from-orange-950 to-black z-10 shadow-md">
             <h1><a href="#" className="text-2xl font-serif ml-8">Maanit Himanshu Shah.</a></h1>
             <ul className="flex space-x-16 items-center pr-28">
-              <li><a href="#" className="text-white text-lg">About</a></li>
-              <li><a href="#" className="text-white text-lg">Projects</a></li>
-              <li><a href="#" className="text-white text-lg">Experience</a></li>
-              <li><a href="#" className="text-white text-lg">Contact</a></li>
+              <li><a href="#about" className="text-white text-lg">About</a></li>
+              <li><a href="#Projects" className="text-white text-lg">Projects</a></li>
+              <li><a href="#Experience" className="text-white text-lg">Experience</a></li>
+              <li><a href="#Contact" className="text-white text-lg">Contact</a></li>
             </ul>
             <div className="mr-8 mt-1">
-              <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="https://drive.google.com/file/d/1ZiOfLQQkWqOrN3KWw8kd1Jhut-OO9WPo/view?usp=sharing">Resume -{">"}</a>
+              <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="https://drive.google.com/file/d/1KP1oPaRhizQ38wbGqN5pioDcZ75oExgJ/view?usp=sharing">Resume -{">"}</a>
             </div>
           </nav>
           <div className="text-center p-10">
@@ -60,7 +61,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="about">
           <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
             <h3 className="text-4xl py-2 text-white font-serif font-semibold">About Me</h3>
             <p className="text-lg py-3 leading-8 text-white font-serif">
@@ -110,7 +111,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="Projects">
           <div>
             <h3 className="text-4xl py-2 mt-14 text-white font-serif font-semibold">Projects</h3>
           </div>
@@ -119,15 +120,16 @@ export default function Home() {
               <h2 className="text-3xl font-serif font-semibold mb-2">StudySpace</h2>
               <h3 className="text-lg font-serif mb-6 text-orange-500">Web Development</h3>
               <p className="text-lg mb-6 mr-10 font-serif">
-              StudySpace attempts to increase the effectiveness of study sessions by offering 
-              rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
+              StudySpace aims to enhance the effectiveness of study sessions by providing rewards and integrating 
+              all the essential tools needed for productive learning, including a Pomodoro Timer, a To-Do List, 
+              and a Study Playlist.
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
                 <a href="https://github.com/maanitshah25/studyspace">View Project →</a>
               </button>
             </div>
             <div className="flex-col">
-              <Image src={StudySpace} alt="" className="w-auto max-h-96 flex object-cover rounded-xl" />
+              <Image src={StudySpace} alt="" className="w-full max-h-96 flex object-cover rounded-xl" />
             </div>
           </div>
           <br></br>
@@ -139,8 +141,9 @@ export default function Home() {
               <h2 className="text-3xl font-serif font-semibold mb-2">FOMO</h2>
               <h3 className="text-lg font-serif mb-6 text-orange-500">App Development</h3>
               <p className="text-lg mb-6 font-serif">
-                StudySpace attempts to increase the effectiveness of study sessions by offering 
-                rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
+              FOMO is an app designed to help UC Davis students easily browse and add events happening in the 
+              city of Davis, CA. Additionally, users can navigate through daily news and events, keeping them 
+              informed and engaged with the latest happenings around them.
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
                 <a href="https://github.com/maanitshah25/Fomo">View Project →</a>
@@ -151,22 +154,22 @@ export default function Home() {
           <div className="bg-gradient-to-r from-amber-950 to-black flex items-center p-6 rounded-lg shadow-lg mb-6">
             <div className="flex-1 text-white">
               <h2 className="text-3xl font-serif font-semibold mb-2">Aggie Marketplace</h2>
-              <h3 className="text-lg font-serif mb-6 text-orange-500">Web Development</h3>
+              <h3 className="text-lg font-serif mb-6 text-orange-500">App Development</h3>
               <p className="text-lg mb-6 mr-10 font-serif">
-              StudySpace attempts to increase the effectiveness of study sessions by offering 
-              rewards along with gathering all the necessary tools; Pomodoro Timer, To Do List, Study Playlist.
+              A marketplace designed to facilitate the buying and selling of items among UC Davis students, 
+              providing them with an easy and efficient platform to conduct their transactions.  
               </p>
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
                 <a href="https://github.com/maanitshah25/marketplace">View Project →</a>
               </button>
             </div>
             <div className="flex-col">
-              <Image src={StudySpace} alt="" className="w-auto max-h-96 object-cover rounded-xl" />
+              <Image src={Marketplace} alt="" className="w-full max-h-96 object-cover rounded-xl" />
             </div>
           </div>
         </section>
 
-        <section>
+        <section id="Experience">
           <div>
             <h3 className="text-4xl py-2 mt-14 text-white font-serif font-semibold">Experience</h3>
           </div>
@@ -176,7 +179,7 @@ export default function Home() {
           </p>
           <div className="flex mb-8 space-x-4">
             <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="http://www.linkedin.com/in/maanit-shah">LinkedIn -{">"}</a>
-            <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="https://drive.google.com/file/d/1ZiOfLQQkWqOrN3KWw8kd1Jhut-OO9WPo/view?usp=sharing">View Resume -{">"}</a>
+            <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="https://drive.google.com/file/d/1KP1oPaRhizQ38wbGqN5pioDcZ75oExgJ/view?usp=sharing">View Resume -{">"}</a>
           </div>
           <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
             <div className="flex items-center mb-4">
@@ -266,7 +269,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-4xl py-2 mt-14 text-white font-serif font-semibold">Some Other Achievements</h3>
+            <h3 className="text-4xl py-2 mt-14 mb-5 text-white font-serif font-semibold">Some Other Achievements</h3>
           </div>
           <div className="carousel">
             <div className="carousel-track">
@@ -288,7 +291,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="Contact">
+        <div>
+          <h3 className="text-4xl py-2 mt-5 text-white font-serif font-semibold">Contact Info</h3>
+        </div>
         <div className="text-4xl flex justify-center gap-16 py-3 text-white">
             <a href="maanithshah1@gmail.com"><AiFillMail/></a>
             <a href="http://www.linkedin.com/in/maanit-shah"><AiFillLinkedin/></a>
