@@ -64,3 +64,45 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 16px;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+button {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1abc9c;
+  transform: scale(1.05);
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #1abc9c;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .project-cards {
+    flex-direction: column;
+  }
+}

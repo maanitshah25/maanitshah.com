@@ -33,9 +33,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"/>     
       </Head>
 
-      <main className=" bg-gradient-to-r from-orange-950 to-black px-10">
+      <main className=" bg-black px-10">
         <section className="min-h-screen">
-          <nav className="fixed top-0 left-0 w-full py-4 flex justify-between bg-gradient-to-r from-orange-950 to-black z-10 shadow-md">
+          <nav className="fixed top-0 left-0 w-full py-4 flex justify-between bg-black z-10 shadow-md">
             <h1><a href="#" className="text-2xl font-serif ml-8">Maanit Himanshu Shah.</a></h1>
             <ul className="flex space-x-16 items-center pr-28">
               <li><a href="#about" className="text-white text-lg">About</a></li>
@@ -62,7 +62,7 @@ export default function Home() {
         </section>
 
         <section id="about">
-          <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-gradient-to-r from-slate-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
             <h3 className="text-4xl py-2 text-white font-serif font-semibold">About Me</h3>
             <p className="text-lg py-3 leading-8 text-white font-serif">
             I am a sophomore Computer Science student at the University of California, Davis, with a minor in 
@@ -115,7 +115,7 @@ export default function Home() {
           <div>
             <h3 className="text-4xl py-2 mt-14 text-white font-serif font-semibold">Projects</h3>
           </div>
-          <div className="bg-gradient-to-r from-amber-950 to-black flex items-center p-6 rounded-lg shadow-lg mb-6">
+          <div className="bg-gradient-to-r from-slate-950 to-black flex items-center p-6 rounded-lg shadow-lg mb-6">
             <div className="flex-1 text-white">
               <h2 className="text-3xl font-serif font-semibold mb-2">StudySpace</h2>
               <h3 className="text-lg font-serif mb-6 text-orange-500">Web Development</h3>
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
           </div>
           <br></br>
-          <div className="bg-gradient-to-r from-black to-amber-950 flex items-center p-6 rounded-lg shadow-lg mb-6">
+          <div className="bg-gradient-to-r from-black to-slate-950 flex items-center p-6 rounded-lg shadow-lg mb-6">
             <div className="flex-col w-auto">
               <Image src={FOMO} alt="" className="w-full max-h-96 object-cover rounded-xl" />
             </div>            
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
           <br></br>
-          <div className="bg-gradient-to-r from-amber-950 to-black flex items-center p-6 rounded-lg shadow-lg mb-6">
+          <div className="bg-gradient-to-r from-slate-950 to-black flex items-center p-6 rounded-lg shadow-lg mb-6">
             <div className="flex-1 text-white">
               <h2 className="text-3xl font-serif font-semibold mb-2">Aggie Marketplace</h2>
               <h3 className="text-lg font-serif mb-6 text-orange-500">App Development</h3>
@@ -181,7 +181,7 @@ export default function Home() {
             <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="http://www.linkedin.com/in/maanit-shah">LinkedIn -{">"}</a>
             <a className="bg-gradient-to-r from-slate-900 to-black text-white px-4 py-2 rounded-md" href="https://drive.google.com/file/d/1KP1oPaRhizQ38wbGqN5pioDcZ75oExgJ/view?usp=sharing">View Resume -{">"}</a>
           </div>
-          <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-gradient-to-r from-slate-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
             <div className="flex items-center mb-4">
               <Image src={GDSC} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-gradient-to-r from-black to-slate-950 p-6 rounded-lg shadow-lg mb-6 font-serif">
             <div className="flex items-center mb-4">
               <Image src={DC} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -238,7 +238,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-amber-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-gradient-to-r from-slate-950 to-black p-6 rounded-lg shadow-lg mb-6 font-serif">
             <div className="flex items-center mb-4">
               <Image src={Cognizant} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -301,7 +301,6 @@ export default function Home() {
             <a href="https://github.com/maanitshah25"><AiFillGithub/></a>
             <a href="https://www.instagram.com/_maanitshah?igsh=MXU2bjNjankwMTR5OQ%3D%3D&utm_source=qr"><AiFillInstagram/></a>
             <a href="https://discord.com/channels/maanitshah25"><AiFillDiscord/></a>
-            <a href="https://x.com/maanithshah1"><AiFillTwitterCircle/></a>
           </div>
         </section>
       </main>
