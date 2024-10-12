@@ -78,9 +78,9 @@ export default function Home() {
             </p>
             <p className="text-lg py-3 leading-8 text-white font-serif">
             Outside of work, you can often find me playing sports such as; Soccer, Cricket, Squash or Volleyball. 
-            I'm a massive music fanatic and have songs palying on my headphones throughtout the day. 
+            I&apos;m a massive music fanatic and have songs palying on my headphones throughtout the day. 
             I love going to the gym and hanging out with friends, 
-            enjoying the simple pleasures of life. Whether it's an intense game or a relaxing afternoon, these 
+            enjoying the simple pleasures of life. Whether it&apos;s an intense game or a relaxing afternoon, these 
             activities keep me balanced and inspired. I believe in capturing such unplanned moments by
             finding joy in both the excitement of sports and the tranquility of leisure.
             </p>
