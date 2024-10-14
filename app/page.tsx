@@ -208,7 +208,7 @@ export default function Home() {
             <p className="mb-4 font-serif text-lg">
               Developed a lecture summarization web application utilizing Python, JavaScript, Node.js, 
               TypeScript, and Amazon Web Services to streamline access to educational content and improve user 
-              efficiency. Additionally, I created immersive audio for the game "The Come Up" using FL Studio, 
+              efficiency. Additionally, I created immersive audio for the game &quot;The Come Up&quot; using FL Studio, 
               enhancing the overall auditory experience. Through collaboration with a team of over 30 members, 
               I strengthened my multitasking abilities and teamwork skills by fostering effective communication 
               and project management.
