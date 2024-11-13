@@ -1,7 +1,7 @@
 Hello everyone,
 
 I have been wanting to make a personal portfolio website for myself for a long time. 
-After 2 weeks of rigorous procastination I finally got myself to open VSC on my laptop and get to work.
+After 2 weeks of rigorous procrastination I finally got myself to open VSC on my laptop and get to work.
 This website showcases some interesting facts about myself as well as my achievements and skills.
 I am very happy to have finally made my own website and hope you guys like it.
-Suggestions and reccomendations are always welcome!!
+Suggestions and recommendations are always welcome!!
