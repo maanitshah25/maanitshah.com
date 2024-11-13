@@ -53,7 +53,7 @@ export default function Home() {
               </button>
             </div>
           </nav>
-          <div className="text-center p-10 mt-20">
+          <div className="text-center p-10 mt-4">
             <div className="relative mx-auto w-64 h-64 mt-16 shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
               <Image src={Myself} alt="" className="rounded-full" />
             </div>
