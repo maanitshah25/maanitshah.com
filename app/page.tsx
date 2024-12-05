@@ -49,7 +49,7 @@ export default function Home() {
             </ul>
             <div className="mr-8 mt-1">
               <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full">
-                <a href="https://drive.google.com/file/d/16mz9IDCP5v0SJBKCfkcf7NQWqDhV6MT7/view?usp=sharing">View Resume →</a>
+                <a href="https://drive.google.com/file/d/182eA__rtt7ejO7Np5k-r9Utglibu_Md8/view?usp=sharing">View Resume →</a>
               </button>
             </div>
           </nav>
@@ -194,7 +194,7 @@ export default function Home() {
               <a href="http://www.linkedin.com/in/maanit-shah">LinkedIn →</a>
             </button>
             <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
-              <a href="https://drive.google.com/file/d/16mz9IDCP5v0SJBKCfkcf7NQWqDhV6MT7/view?usp=sharing">View Resume →</a>
+              <a href="https://drive.google.com/file/d/182eA__rtt7ejO7Np5k-r9Utglibu_Md8/view?usp=sharing">View Resume →</a>
             </button>
           </div>
           <div className="bg-transparent border border-white text-white p-6 rounded-lg shadow-lg mb-6 font-serif">
