@@ -23,6 +23,7 @@ import Coursera6 from '../public/Coursera6-img.png'
 import Coursera7 from '../public/Coursera7-img.png'
 import AiSummit from '../public/AiSummit-img.jpeg'
 import Icarus from '../public/Icarus-img.jpeg'
+import ThreeDShape from "@/components/ThreeDShape";
 
 export default function Home() {
   return (
@@ -53,7 +54,11 @@ export default function Home() {
               </button>
             </div>
           </nav>
+          
           <div className="text-center p-10 mt-4">
+            <div className="relative mx-auto w-full h-64">
+              <ThreeDShape />
+            </div>
             <div className="relative mx-auto w-64 h-64 mt-16 shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
               <Image src={Myself} alt="" className="rounded-full" />
             </div>
@@ -90,7 +95,7 @@ export default function Home() {
             </p>
             <p className="text-lg mb-6 leading-8 text-white font-serif">
             Outside of work, you can often find me playing sports such as; Soccer, Cricket, Squash or Volleyball. 
-            I&apos;m a massive music fanatic and have songs palying on my headphones throughtout the day. 
+            I&apos;m a massive music fanatic and have songs playing on my headphones throughout the day. 
             I love going to the gym and hanging out with friends, 
             enjoying the simple pleasures of life. Whether it&apos;s an intense game or a relaxing afternoon, these 
             activities keep me balanced and inspired. I believe in capturing such unplanned moments by
@@ -233,7 +238,7 @@ export default function Home() {
               <Image src={AiSummit} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
                 <h3 className="text-3xl font-bold">Ai Summit</h3>
-                <p className="text-xl text-orange-500">Tech Outreach Ananlyst</p>
+                <p className="text-xl text-orange-500">Tech Outreach Analyst</p>
               </div>
             </div>
             <p className="mb-4 font-serif text-lg">
