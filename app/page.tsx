@@ -56,9 +56,6 @@ export default function Home() {
           </nav>
           
           <div className="text-center p-10 mt-4">
-            <div className="relative mx-auto w-full h-64">
-              <ThreeDShape />
-            </div>
             <div className="relative mx-auto w-64 h-64 mt-16 shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
               <Image src={Myself} alt="" className="rounded-full" />
             </div>
@@ -76,6 +73,12 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="Three" className="py-6">
+          <div className="relative mx-auto w-full h-64">
+            <ThreeDShape />
+          </div>
+        </section>
+        
         <section id="about" className="py-6">
         <div className="bg-gray-950 text-white p-8 rounded-lg shadow-lg">
             <h3 className="text-4xl mb-4 font-bold text-white font-serif">
