@@ -19,9 +19,13 @@ const ThreeDShape = () => {
       0.1,
       1000
     );
-    camera.position.z = 50;
+    camera.position.z = 30;
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true,
+    });
+    renderer.setClearColor(0x000000, 0);
     renderer.setSize(container.offsetWidth, container.offsetHeight);
     container.appendChild(renderer.domElement);
 
@@ -30,7 +34,11 @@ const ThreeDShape = () => {
     const bookLength = 16;
     const bookHeight = 24;
 
-    const geometry = new THREE.BoxGeometry(bookLength, bookHeight, bookThickness);
+    const geometry = new THREE.BoxGeometry(
+      bookLength,
+      bookHeight,
+      bookThickness
+    );
 
     // Texture for the Book Cover
     const createBookCoverTexture = () => {
@@ -57,7 +65,13 @@ const ThreeDShape = () => {
           ctx.arc(centerX, centerY, radius, 0, Math.PI * 2, true);
           ctx.closePath();
           ctx.clip();
-          ctx.drawImage(image, centerX - radius, centerY - radius, radius * 2, radius * 2);
+          ctx.drawImage(
+            image,
+            centerX - radius,
+            centerY - radius,
+            radius * 2,
+            radius * 2
+          );
           ctx.restore();
 
           // Text
@@ -81,12 +95,12 @@ const ThreeDShape = () => {
     const spineTexture = new THREE.MeshBasicMaterial({ color: 0x333333 });
 
     const materials = [
-      spineTexture, 
-      spineTexture, 
-      backCoverTexture, 
-      backCoverTexture, 
-      new THREE.MeshBasicMaterial({ map: frontCoverTexture }), 
-      backCoverTexture, 
+      spineTexture,
+      spineTexture,
+      backCoverTexture,
+      backCoverTexture,
+      new THREE.MeshBasicMaterial({ map: frontCoverTexture }),
+      backCoverTexture,
     ];
 
     const book = new THREE.Mesh(geometry, materials);
@@ -122,7 +136,20 @@ const ThreeDShape = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ width: "100%", height: "500px" }} />;
+  return (
+    <div
+      ref={containerRef}
+      style={{
+        width: "100%",
+        height: "300px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "hidden",
+        position: "relative",
+      }}
+    />
+  );
 };
 
 export default ThreeDShape;
