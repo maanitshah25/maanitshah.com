@@ -68,7 +68,7 @@ export default function Home() {
             <p className="text-lg py-4 leading-8 text-gray-300 max-w-3xl mx-auto font-serif">
               A Computer Science and Technology Management student at University of California, Davis, looking 
               for an opportunity in a dynamic organization to gain a better insight into the real-world 
-              applications of Computer Science, Business, and Marketing.
+              applications of Artificial Intelligence, Information Technology and Web Development.
             </p>
           </div>
         </section>
