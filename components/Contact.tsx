@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="mb-4 font-serif text-lg">
         <p className="text-lg text-white w-8/12 ">
           If you have opportunities or are interested in collaboration, please email me. You can also connect on 
-          social media for questions or just to say hi! My inbox is always open, and I'll try to get back as soon as
+          social media for questions or just to say hi! My inbox is always open, and I&apos;ll try to get back as soon as
           possible.
         </p>
       </div>
