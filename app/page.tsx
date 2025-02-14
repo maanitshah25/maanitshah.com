@@ -20,14 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-black px-10">
+      <main className="dark:bg-black bg-white px-10">
         <Navbar />
-        <Hero />
-        <section id="Three" className="py-6">
-          <div className="relative mx-auto w-full h-64">
-            <ThreeDShape />
-          </div>
-        </section>        
+        <Hero />        
         <About />
         <Projects />
         <Experience />

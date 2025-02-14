@@ -114,16 +114,44 @@ nav ul li a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
   background-color: #E7E7E7;
+}
+
+body {
+  @apply transition-colors duration-200;
+}
+
+/* Light Mode */
+body {
+  @apply bg-white text-black;
+}
+
+/* Dark Mode */
+.dark body {
+  @apply bg-black text-white;
 }
