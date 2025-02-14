@@ -9,21 +9,21 @@ const Experience = () => {
     return (
         <section id="Experience">
           <div>
-            <h3 className="text-4xl py-2 mt-14 text-white font-serif font-semibold">Experience</h3>
+            <h3 className="text-4xl py-2 mt-14 font-serif font-semibold text-black dark:text-white">Experience</h3>
           </div>
-          <p className="text-lg mb-2 font-serif">
+          <p className="text-lg mb-2 font-serif text-black dark:text-white">
             Always eager to find new opportunities and explore different areas. Connect with me on LinkedIn to 
             keep up with my career journey!
           </p>
           <div className="flex mb-8 space-x-4">
-            <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
+            <button className="flex items-center bg-transparent border border-black dark:border-white text-black dark:text-white px-4 py-2 rounded-full mt-4">
               <a href="http://www.linkedin.com/in/maanit-shah">LinkedIn →</a>
             </button>
-            <button className="flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-full mt-4">
+            <button className="flex items-center bg-transparent border border-black dark:border-white text-black dark:text-white px-4 py-2 rounded-full mt-4">
               <a href="https://drive.google.com/file/d/182eA__rtt7ejO7Np5k-r9Utglibu_Md8/view?usp=sharing">View Resume →</a>
             </button>
           </div>
-          <div className="bg-transparent border border-white text-white p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
             <div className="flex items-center mb-4">
               <Image src={Icarus} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -39,7 +39,7 @@ const Experience = () => {
               I strengthened my multitasking abilities and teamwork skills by fostering effective communication 
               and project management.
             </p>
-            <div className="flex items-center text-sm text-white">
+            <div className="flex items-center text-sm">
               <div className="flex items-center mr-6">
                 <span className="material-icons-outlined"><BsBagFill/></span>
                 <span className="ml-2">Internship</span>
@@ -54,7 +54,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="bg-transparent border border-white text-white p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
             <div className="flex items-center mb-4">
               <Image src={AiSummit} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -70,7 +70,7 @@ const Experience = () => {
               execution of the summit. I also optimized CRM workflows and refined targeted email strategies, 
               leading to improved speaker engagement and response rates.
             </p>
-            <div className="flex items-center text-sm text-white">
+            <div className="flex items-center text-sm">
               <div className="flex items-center mr-6">
                 <span className="material-icons-outlined"><BsBagFill/></span>
                 <span className="ml-2">Internship</span>
@@ -85,7 +85,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="bg-transparent border border-white text-white p-6 rounded-lg shadow-lg mb-6 font-serif">
+          <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
             <div className="flex items-center mb-4">
               <Image src={GDSC} alt="" className="h-16 w-16 mr-4 rounded-full" />
               <div>
@@ -98,7 +98,7 @@ const Experience = () => {
               a working progress bar and linking Spotify API. Acquired multiple awards for Best product pitch and Best 
               User Experience.
             </p>
-            <div className="flex items-center text-sm text-white">
+            <div className="flex items-center text-sm">
               <div className="flex items-center mr-6">
                 <span className="material-icons-outlined"><BsBagFill/></span>
                 <span className="ml-2">Part-time</span>

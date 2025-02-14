@@ -12,7 +12,9 @@ const Achievements = () => {
     return (
         <section>
           <div>
-            <h3 className="text-4xl py-2 mt-14 mb-5 text-white font-serif font-semibold">Some Other Achievements</h3>
+            <h3 className="text-4xl py-2 mt-14 mb-5 text-black dark:text-white font-serif font-semibold">
+              Some Other Achievements
+            </h3>
           </div>
           <div className="carousel">
             <div className="carousel-track">
