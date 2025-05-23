@@ -23,37 +23,7 @@ const Experience = () => {
               <a href="https://drive.google.com/file/d/182eA__rtt7ejO7Np5k-r9Utglibu_Md8/view?usp=sharing">View Resume →</a>
             </button>
           </div>
-          <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
-            <div className="flex items-center mb-4">
-              <Image src={Icarus} alt="" className="h-16 w-16 mr-4 rounded-full" />
-              <div>
-                <h3 className="text-3xl font-bold">Icarus Development</h3>
-                <p className="text-xl text-orange-500">Software Developer</p>
-              </div>
-            </div>
-            <p className="mb-4 font-serif text-lg">
-              Developed a lecture summarization web application utilizing Python, JavaScript, Node.js, 
-              TypeScript, and Amazon Web Services to streamline access to educational content and improve user 
-              efficiency. Additionally, I created immersive audio for the game &quot;The Come Up&quot; using FL Studio, 
-              enhancing the overall auditory experience. Through collaboration with a team of over 30 members, 
-              I strengthened my multitasking abilities and teamwork skills by fostering effective communication 
-              and project management.
-            </p>
-            <div className="flex items-center text-sm">
-              <div className="flex items-center mr-6">
-                <span className="material-icons-outlined"><BsBagFill/></span>
-                <span className="ml-2">Internship</span>
-              </div>
-              <div className="flex items-center mr-6">
-                <span className="material-icons-outlined"><BsFillPinFill/></span>
-                <span className="ml-2">Davis, CA</span>
-              </div>
-              <div className="flex items-center">
-                <span className="material-icons-outlined"><BsCalendar2/></span>
-                <span className="ml-2">August 2024 - Present</span>
-              </div>
-            </div>
-          </div>
+
           <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
             <div className="flex items-center mb-4">
               <Image src={AiSummit} alt="" className="h-16 w-16 mr-4 rounded-full" />
@@ -81,10 +51,43 @@ const Experience = () => {
               </div>
               <div className="flex items-center">
                 <span className="material-icons-outlined"><BsCalendar2/></span>
-                <span className="ml-2">July 2024 - November 2024</span>
+                <span className="ml-2">July 2024 - Present</span>
               </div>
             </div>
           </div>
+
+          <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
+            <div className="flex items-center mb-4">
+              <Image src={Icarus} alt="" className="h-16 w-16 mr-4 rounded-full" />
+              <div>
+                <h3 className="text-3xl font-bold">Icarus Development</h3>
+                <p className="text-xl text-orange-500">Software Developer</p>
+              </div>
+            </div>
+            <p className="mb-4 font-serif text-lg">
+              Developed a lecture summarization web application utilizing Python, JavaScript, Node.js, 
+              TypeScript, and Amazon Web Services to streamline access to educational content and improve user 
+              efficiency. Additionally, I created immersive audio for the game &quot;The Come Up&quot; using FL Studio, 
+              enhancing the overall auditory experience. Through collaboration with a team of over 30 members, 
+              I strengthened my multitasking abilities and teamwork skills by fostering effective communication 
+              and project management.
+            </p>
+            <div className="flex items-center text-sm">
+              <div className="flex items-center mr-6">
+                <span className="material-icons-outlined"><BsBagFill/></span>
+                <span className="ml-2">Internship</span>
+              </div>
+              <div className="flex items-center mr-6">
+                <span className="material-icons-outlined"><BsFillPinFill/></span>
+                <span className="ml-2">Davis, CA</span>
+              </div>
+              <div className="flex items-center">
+                <span className="material-icons-outlined"><BsCalendar2/></span>
+                <span className="ml-2">August 2024 - February 2025</span>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-transparent p-6 rounded-lg mb-6 font-serif text-black dark:text-white">
             <div className="flex items-center mb-4">
               <Image src={GDSC} alt="" className="h-16 w-16 mr-4 rounded-full" />
