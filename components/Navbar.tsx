@@ -7,8 +7,8 @@ const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 w-full py-4 flex justify-between bg-white dark:bg-black  z-10 shadow-md">
             <h1>
-                <a href="#" className="text-2xl font-semibold text-black dark:text-white ml-8 font-serif">
-                    Maanit Himanshu Shah.
+                <a href="#" className="text-2xl font-semibold text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-500 ml-8 font-serif">
+                    MHS.
                 </a>
             </h1>
             <ul className="flex space-x-10 items-center pr-20 text-black dark:text-white text-lg">
