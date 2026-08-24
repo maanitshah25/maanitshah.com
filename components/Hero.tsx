@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Myself from "../public/myself1-img.jpg";
+import Myself from "../public/myself1-img.jpeg";
 
 const ROLES = [
     "Full-stack Developer",
