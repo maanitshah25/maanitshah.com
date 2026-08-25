@@ -62,13 +62,6 @@ const Hero = () => {
                     <p className="italic text-2xl md:text-3xl font-serif text-black dark:text-white mt-6 border-l-4 border-orange-500 pl-4">
                         &ldquo;Compiling ideas into impact.&rdquo;
                     </p>
-
-                    <p className="text-base md:text-lg py-6 leading-8 text-black dark:text-white max-w-2xl mx-auto md:mx-0 font-serif">
-                        A Computer Science and Technology Management student at University of California, Davis,
-                        looking for an opportunity in a dynamic organization to gain a better insight into the
-                        real-world applications of Artificial Intelligence, Information Technology and Web
-                        Development.
-                    </p>
                 </div>
             </div>
         </section>

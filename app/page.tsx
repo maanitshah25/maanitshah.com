@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="dark:bg-black bg-white px-10">
+      <main className="dark:bg-black bg-white px-5 md:px-10">
         <Navbar />
         <Hero />        
         <About />

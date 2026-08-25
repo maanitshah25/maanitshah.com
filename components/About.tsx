@@ -2,68 +2,101 @@
 
 import React from "react";
 import Image from "next/image";
-import Baby from '../public/baby-img.jpg'
-import Family from '../public/family-img.jpg'
-import Friends from '../public/friends-img.jpg'
-import Myself4 from '../public/myself4-img.jpg'
-import Certificate from '../public/certificate-img.jpg'
-import Myself5 from '../public/myself5-img.jpg'
-import Certificate1 from '../public/certificate1-img.jpg'
+import Picture1 from "../public/vietnam-2.jpg";
+import Picture2 from "../public/grad.jpg";
+import Picture3 from "../public/cluster-win.jpg";
+import Picture5 from "../public/friends.jpg";
+import Picture4 from "../public/vietnam-1.jpg";
+import Picture6 from "../public/bungee.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-6">
-      <div className="dark:bg-black bg-white text-black dark:text-white p-8 rounded-lg">
-        <h3 className="text-4xl mb-4 font-bold text-black dark:text-white font-serif">
-          About Me
-        </h3>
-          <p className="text-lg mb-6 leading-8 text-black dark:text-white font-serif">
-            I am a Third Year Computer Science student at the University of California, Davis, with a minor in 
-            Tech Management. Passionate about leveraging technology to solve real-world problems, I have 
-            developed a versatile skill set that includes proficiency in Python, C++, JavaScript, and frameworks
-            such as React Native and Node.js.
+    <section id="about" className="py-12 md:py-8">
+      <p className="text-orange-500 text-xs md:text-sm font-medium uppercase tracking-widest font-serif">
+        About
+      </p>
+      <h3 className="text-2xl md:text-3xl font-semibold font-serif text-black dark:text-white mt-1 mb-6">
+        A bit about me
+      </h3>
+
+      <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="space-y-4 text-sm md:text-base leading-relaxed text-black dark:text-white font-serif">
+          <p>
+            I&apos;m a Computer Science student at UC Davis, minoring in Technology
+            Management, who likes turning ideas into shipped products. I&apos;ve led
+            sponsorship for a 1,000+ person hackathon at{" "}
+            <span className="font-semibold">HackDavis</span>, engineered a local
+            LLM agent stack at{" "}
+            <span className="font-semibold">Tech Equity&apos;s AI Summit</span>, and
+            built the core of StenoStudy at{" "}
+            <span className="font-semibold">Icarus Development</span> and a lot more.
           </p>
-          <p className="text-lg mb-6 leading-8 text-black dark:text-white font-serif">
-            My journey in tech began with UC Davis coding clubs and hands-on projects, where I gained valuable experience 
-            in software development and database management. As the Technical Lead for the Google Developer 
-            Student Club, I have honed my leadership skills while collaborating on innovative solutions. I am 
-            eager to continue expanding my expertise and contribute to impactful projects.
+          <p>
+            Outside of code, I&apos;m usually on a soccer or cricket field, at the
+            gym, hiking, or with headphones in, chasing the same balance of focus and
+            fun that keeps my work interesting.
           </p>
-          <p className="text-lg mb-6 leading-8 text-black dark:text-white font-serif">
-            Outside of work, you can often find me playing sports such as Soccer, Cricket, Squash or Volleyball. 
-            I&apos;m a massive music fanatic and have songs playing on my headphones throughout the day. 
-            I love going to the gym and hanging out with friends, 
-            enjoying the simple pleasures of life. Whether it&apos;s an intense game or a relaxing afternoon, these 
-            activities keep me balanced and inspired. I believe in capturing such unplanned moments by
-            finding joy in both the excitement of sports and the tranquility of leisure.
-          </p>
-          
-          <div className="flex justify-center space-x-6 mt-2">
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Baby} alt="Image 1" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Family} alt="Image 2" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Friends} alt="Image 3" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Myself4} alt="Image 4" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Myself5} alt="Image 5" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Certificate} alt="Image 6" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-52 h-52 rounded-lg overflow-hidden">
-              <Image src={Certificate1} alt="Image 8" className="w-full h-full object-cover" />
-            </div>
+        </div>
+
+        <div className="grid grid-cols-4 grid-rows-3 gap-3 h-[380px] md:h-[420px]">
+          <div className="relative col-start-1 col-span-2 row-start-1 row-span-2 rounded-xl overflow-hidden">
+            <Image
+              src={Picture1}
+              alt="Vietnam1"
+              fill
+              sizes="(max-width: 768px) 50vw, 25vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
           </div>
+          <div className="relative col-start-3 col-span-1 row-start-1 row-span-1 rounded-xl overflow-hidden">
+            <Image
+              src={Picture2}
+              alt="Grad"
+              fill
+              sizes="(max-width: 768px) 25vw, 12vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="relative col-start-4 col-span-1 row-start-1 row-span-2 rounded-xl overflow-hidden">
+            <Image
+              src={Picture3}
+              alt="Cluster Win"
+              fill
+              sizes="(max-width: 768px) 25vw, 12vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="relative col-start-3 col-span-1 row-start-2 row-span-1 rounded-xl overflow-hidden">
+            <Image
+              src={Picture4}
+              alt="As a kid"
+              fill
+              sizes="(max-width: 768px) 25vw, 12vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="relative col-start-1 col-span-2 row-start-3 row-span-1 rounded-xl overflow-hidden">
+            <Image
+              src={Picture5}
+              alt="Portrait"
+              fill
+              sizes="(max-width: 768px) 50vw, 25vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="relative h-50 col-start-3 col-span-2 row-start-3 row-span-1 rounded-xl overflow-hidden">
+            <Image
+              src={Picture6}
+              alt="Grad"
+              fill
+              sizes="(max-width: 768px) 50vw, 25vw"
+              className="object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default About
+export default About;
