@@ -1,12 +1,61 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { FaGithub } from "react-icons/fa";
 import StudySpace from "../public/StudySpace4.png";
 import Marketplace from "../public/Marketplace.png";
 import FOMO from "../public/Fomo1.jpg";
 
+type ProjectItem = {
+  title: string;
+  tag: string;
+  description: string;
+  github?: string;
+  image?: StaticImageData;
+  placeholder?: boolean;
+};
+
+const PROJECTS: ProjectItem[] = [
+  {
+    title: "StudySpace",
+    tag: "Web Development",
+    description:
+      "A gamified study platform that rewards focused time with points and a leaderboard, pairing a Pomodoro timer with progress-based incentives.",
+    github: "https://github.com/maanitshah25/studyspace",
+    image: StudySpace,
+  },
+  {
+    title: "FOMO",
+    tag: "App Development",
+    description:
+      "An event-discovery app for UC Davis students that surfaces nearby events with ML-driven personalization and real-time listings.",
+    github: "https://github.com/maanitshah25/Fomo",
+    image: FOMO,
+  },
+  {
+    title: "Aggie Marketplace",
+    tag: "App Development",
+    description:
+      "A marketplace that makes buying and selling items among UC Davis students easy and efficient.",
+    github: "https://github.com/maanitshah25/marketplace",
+    image: Marketplace,
+  },
+  {
+    title: "Signal",
+    tag: "TBD",
+    description: "Details coming soon.",
+    placeholder: true,
+  },
+  {
+    title: "WorkforceOS",
+    tag: "TBD",
+    description: "Details coming soon.",
+    placeholder: true,
+  },
+];
+
 const Project = () => {
   return (
-    <section id="Projects" className="py-12 md:py-8">
+    <section id="Projects" className="py-12 md:py-16">
       <p className="text-orange-500 text-xs md:text-sm font-medium uppercase tracking-widest font-serif">
         Work
       </p>
@@ -14,67 +63,55 @@ const Project = () => {
         Projects
       </h3>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 mb-10 font-serif">
-        <div className="flex-1 order-2 md:order-1">
-          <h4 className="text-xl font-serif font-semibold mb-1 text-black dark:text-white">StudySpace</h4>
-          <p className="text-sm mb-3 text-orange-500">Web Development</p>
-          <p className="text-sm md:text-base mb-4 leading-relaxed text-black dark:text-white">
-            StudySpace aims to enhance the effectiveness of study sessions by providing rewards and
-            integrating all the essential tools needed for productive learning, including a Pomodoro
-            Timer, a To-Do List, and a Study Playlist.
-          </p>
-          <a
-            href="https://github.com/maanitshah25/studyspace"
-            className="inline-block border border-black dark:border-white text-black dark:text-white text-sm px-3.5 py-1.5 rounded-full hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-colors duration-300"
-          >
-            View Project →
-          </a>
-        </div>
-        <div className="w-full md:w-1/2 order-1 md:order-2">
-          <Image src={StudySpace} alt="" className="w-full max-h-72 object-cover rounded-xl" />
-        </div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+        {PROJECTS.map((project, i) => (
+          <div key={i} className="group">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+              {project.placeholder ? (
+                <div className="w-full h-full flex items-center justify-center rounded-xl border-2 border-dashed border-black/15 dark:border-white/15 bg-black/[0.02] dark:bg-white/[0.03]">
+                  <span className="text-xs uppercase tracking-widest text-black/40 dark:text-white/40 font-serif">
+                    Coming soon
+                  </span>
+                </div>
+              ) : (
+                <Image
+                  src={project.image as StaticImageData}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              )}
+            </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 mb-10 font-serif">
-        <div className="w-full md:w-1/2">
-          <Image src={FOMO} alt="" className="w-full max-h-72 object-cover rounded-xl" />
-        </div>
-        <div className="flex-1">
-          <h4 className="text-xl font-serif font-semibold mb-1 text-black dark:text-white">FOMO</h4>
-          <p className="text-sm mb-3 text-orange-500">App Development</p>
-          <p className="text-sm md:text-base mb-4 leading-relaxed text-black dark:text-white">
-            FOMO is an app designed to help UC Davis students easily browse and add events happening
-            in the city of Davis, CA, and navigate through daily news and events, keeping them
-            informed and engaged.
-          </p>
-          <a
-            href="https://github.com/maanitshah25/Fomo"
-            className="inline-block border border-black dark:border-white text-black dark:text-white text-sm px-3.5 py-1.5 rounded-full hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-colors duration-300"
-          >
-            View Project →
-          </a>
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row items-center gap-8 mb-4 font-serif">
-        <div className="flex-1 order-2 md:order-1">
-          <h4 className="text-xl font-serif font-semibold mb-1 text-black dark:text-white">Aggie Marketplace</h4>
-          <p className="text-sm mb-3 text-orange-500">App Development</p>
-          <p className="text-sm md:text-base mb-4 leading-relaxed text-black dark:text-white">
-            A marketplace designed to facilitate the buying and selling of items among UC Davis
-            students, providing them with an easy and efficient platform to conduct their
-            transactions.
-          </p>
-          <a
-            href="https://github.com/maanitshah25/marketplace"
-            className="inline-block border border-black dark:border-white text-black dark:text-white text-sm px-3.5 py-1.5 rounded-full hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-colors duration-300"
-          >
-            View Project →
-          </a>
-        </div>
-        <div className="w-full md:w-1/2 order-1 md:order-2">
-          <Image src={Marketplace} alt="" className="w-full max-h-72 object-cover rounded-xl" />
-        </div>
+            <div className="flex items-center justify-between mt-4">
+              <h4
+                className={`text-lg font-semibold font-serif ${
+                  project.placeholder
+                    ? "text-black/40 dark:text-white/40 italic"
+                    : "text-black dark:text-white"
+                }`}
+              >
+                {project.title}
+              </h4>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${project.title} on GitHub`}
+                  className="text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-500 transition-colors duration-300"
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
+            </div>
+            <p className="text-sm text-orange-500 mt-0.5 font-serif">{project.tag}</p>
+            <p className="text-sm leading-relaxed text-black/70 dark:text-white/70 mt-2 font-serif">
+              {project.description}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
