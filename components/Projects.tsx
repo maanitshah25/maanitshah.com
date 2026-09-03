@@ -42,13 +42,13 @@ const PROJECTS: ProjectItem[] = [
   {
     title: "Signal",
     tag: "TBD",
-    description: "Details coming soon.",
+    description: "Coming Soon.",
     placeholder: true,
   },
   {
     title: "WorkforceOS",
     tag: "TBD",
-    description: "Details coming soon.",
+    description: "Coming Soon.",
     placeholder: true,
   },
 ];
