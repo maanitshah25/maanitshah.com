@@ -65,9 +65,10 @@ body {
 }
 
 .carousel-item {
-  width: 260px;
-  height: 180px;
+  width: 360px;
+  height: 260px;
   margin-right: 24px;
+  object-fit: cover;
 }
 
 @keyframes scroll {

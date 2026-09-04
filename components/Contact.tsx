@@ -4,7 +4,7 @@ import { AiFillMail } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section id="Contact" className="py-12 md:py-16">
+    <section id="Contact" className="py-12 md:py-2">
       <p className="text-orange-500 text-xs md:text-sm font-medium uppercase tracking-widest font-serif">
         Get in touch
       </p>

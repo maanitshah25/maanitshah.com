@@ -22,12 +22,16 @@ const Experience = () => {
       <div className="flex gap-3 mb-8">
         <a
           href="http://www.linkedin.com/in/maanit-shah"
+          target="_blank"
+          rel="noopener noreferrer"
           className="border border-black dark:border-white text-black dark:text-white text-sm px-3.5 py-1.5 rounded-full hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-colors duration-300"
         >
           LinkedIn →
         </a>
         <a
           href="https://drive.google.com/file/d/182eA__rtt7ejO7Np5k-r9Utglibu_Md8/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="border border-black dark:border-white text-black dark:text-white text-sm px-3.5 py-1.5 rounded-full hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-colors duration-300"
         >
           View Resume →
