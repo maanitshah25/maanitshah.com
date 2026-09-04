@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className="dark:bg-black bg-white px-5 md:px-10">
         <Navbar />
-        <Hero />        
+        <Hero />
         <About />
         <Projects />
         <Experience />
