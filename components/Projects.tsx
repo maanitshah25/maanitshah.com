@@ -1,9 +1,10 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { FaGithub } from "react-icons/fa";
-import StudySpace from "../public/StudySpace4.png";
+import StudySpace from "../public/studyspace-new.png";
 import Marketplace from "../public/Marketplace.png";
-import FOMO from "../public/Fomo1.jpg";
+import FOMO from "../public/fomo-new.png";
+import Signal from "../public/Signal.png";
 
 type ProjectItem = {
   title: string;
@@ -15,6 +16,14 @@ type ProjectItem = {
 };
 
 const PROJECTS: ProjectItem[] = [
+  {
+    title: "Signal",
+    tag: "Browser Extension / AI",
+    description:
+      "A Chrome sidebar extension that tracks researchers and labs, using TinyFish AI agents to autonomously surface new papers, citation spikes, grants, and patents.",
+    github: "https://github.com/maanitshah25/signal",
+    image: Signal,
+  },
   {
     title: "StudySpace",
     tag: "Web Development",
@@ -40,13 +49,13 @@ const PROJECTS: ProjectItem[] = [
     image: Marketplace,
   },
   {
-    title: "Signal",
+    title: "WorkforceOS",
     tag: "TBD",
     description: "Coming Soon.",
     placeholder: true,
   },
   {
-    title: "WorkforceOS",
+    title: "ASAI",
     tag: "TBD",
     description: "Coming Soon.",
     placeholder: true,
@@ -73,14 +82,16 @@ const Project = () => {
                     Coming soon
                   </span>
                 </div>
-              ) : (
+              ) : project.image ? (
                 <Image
-                  src={project.image as StaticImageData}
+                  src={project.image}
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+              ) : (
+                <div className="w-full h-full rounded-xl bg-black/[0.03] dark:bg-white/[0.05]" />
               )}
             </div>
 
