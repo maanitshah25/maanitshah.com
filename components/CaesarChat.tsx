@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import { FiArrowUp, FiMessageCircle, FiRefreshCw, FiX } from "react-icons/fi";
 
 type Message = { role: "user" | "assistant"; content: string };
-const suggestions = ["What is Maanit building?", "Where did he grow up?", "What does he enjoy?"];
+const suggestions = ["What is Maanit currently working on?", "Where did Maanit grow up?", "What is Maanit passionate about?"];
 const approvedLinks = new Set([
   "https://www.linkedin.com/in/maanit-shah",
   "https://www.instagram.com/_maanitshah",
