@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import CaesarChat from "@/components/CaesarChat";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white text-black dark:bg-black dark:text-white`}>
         <ThemeProvider>
           {children}
+          <CaesarChat />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

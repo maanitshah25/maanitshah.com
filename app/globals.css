@@ -171,3 +171,140 @@ body {
 .dark body {
   @apply bg-black text-white;
 }
+
+/* Caesar: an isolated, compact neutral surface. */
+.caesar-chat {
+  --caesar-surface: #f4f2ed;
+  --caesar-inset: #eae7e0;
+  --caesar-hover: #e2ded5;
+  --caesar-text: #292824;
+  --caesar-muted: #77746d;
+  --caesar-line: #29282414;
+  position: fixed;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  right: max(20px, env(safe-area-inset-right));
+  z-index: 50;
+  color: var(--caesar-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.dark .caesar-chat {
+  --caesar-surface: #242424;
+  --caesar-inset: #303030;
+  --caesar-hover: #3b3b3b;
+  --caesar-text: #ededeb;
+  --caesar-muted: #aaa9a5;
+  --caesar-line: #ffffff12;
+}
+.caesar-chat button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: inherit;
+  background: transparent;
+  transition: background-color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+.caesar-chat button:hover { background: var(--caesar-hover); transform: none; }
+.caesar-chat button:disabled { cursor: not-allowed; opacity: .35; }
+.caesar-chat button:disabled:hover { background: transparent; }
+.caesar-chat button:focus-visible,
+.caesar-chat a:focus-visible {
+  outline: 2px solid var(--caesar-muted);
+  outline-offset: 3px;
+}
+.caesar-chat a:hover { color: var(--caesar-muted); }
+.caesar-panel {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  width: min(320px, calc(100vw - 40px));
+  height: min(390px, calc(100dvh - 110px - env(safe-area-inset-bottom)));
+  overflow: hidden;
+  border: 1px solid var(--caesar-line);
+  border-radius: 16px;
+  background: var(--caesar-surface);
+  box-shadow: 0 12px 40px #00000016, 0 2px 8px #00000008;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(.96);
+  transform-origin: bottom right;
+  transition: opacity 220ms ease, transform 260ms cubic-bezier(.2,.8,.2,1), visibility 220ms;
+}
+.caesar-panel-open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+.dark .caesar-panel { box-shadow: 0 12px 40px #00000050; }
+.caesar-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 12px;
+  border-bottom: 1px solid var(--caesar-line);
+}
+.caesar-avatar {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--caesar-inset);
+  font-size: 14px;
+  font-weight: 500;
+}
+.caesar-heading { flex: 1; }
+.caesar-heading h2 { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: -.2px; }
+.caesar-heading p { margin: 0; color: var(--caesar-muted); font-size: 12px; }
+.caesar-icon-button { width: 28px; height: 30px; border-radius: 8px; }
+.caesar-log {
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 14px 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--caesar-hover) transparent;
+}
+.caesar-message {
+  width: fit-content;
+  max-width: 94%;
+  margin-bottom: 12px;
+  padding: 9px 11px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.55;
+  animation: caesar-message-in 180ms ease-out;
+}
+.caesar-message-assistant { padding-left: 2px; }
+.caesar-message-user { margin-left: auto; background: var(--caesar-inset); border-bottom-right-radius: 4px; }
+.caesar-suggestions { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.caesar-suggestions button { padding: 6px 10px; border: 1px solid var(--caesar-line); border-radius: 9px; font-size: 14px; text-align: left; }
+.caesar-composer { flex-shrink: 0; padding: 10px; border-top: 1px solid var(--caesar-line); }
+.caesar-composer form { display: flex; align-items: center; gap: 5px; padding: 4px 4px 4px 10px; border-radius: 10px; background: var(--caesar-inset); }
+.caesar-composer form:focus-within { box-shadow: 0 0 0 1px var(--caesar-muted); }
+.caesar-composer input { width: 100%; min-width: 0; padding: 5px 0; background: transparent; border: 0; outline: none; color: var(--caesar-text); font-family: inherit; font-size: 14px; }
+.caesar-composer input::placeholder { color: var(--caesar-muted); }
+.caesar-chat .caesar-send { width: 30px; height: 30px; border-radius: 8px; background: var(--caesar-surface); }
+.caesar-error { margin: 0 2px 8px; color: var(--caesar-text); font-size: 12px; }
+.caesar-chat .caesar-launcher { position: relative; display: flex; width: 48px; height: 48px; border: 1px solid var(--caesar-line); border-radius: 50%; background: var(--caesar-surface); box-shadow: 0 3px 14px #00000018; }
+.caesar-chat .caesar-launcher:hover { background: var(--caesar-inset); transform: translateY(-2px); }
+.caesar-launcher svg { position: absolute; transition: opacity 180ms ease, transform 240ms ease; }
+.caesar-launcher-close { opacity: 0; transform: rotate(-70deg) scale(.6); }
+.caesar-launcher-open .caesar-launcher-chat { opacity: 0; transform: rotate(70deg) scale(.6); }
+.caesar-launcher-open .caesar-launcher-close { opacity: 1; transform: rotate(0) scale(1); }
+.caesar-thinking { display: flex; gap: 4px; padding: 8px 3px; }
+.caesar-thinking i { width: 4px; height: 4px; border-radius: 50%; background: var(--caesar-muted); animation: caesar-pulse 1s ease-in-out infinite; }
+.caesar-thinking i:nth-child(2) { animation-delay: 150ms; }
+.caesar-thinking i:nth-child(3) { animation-delay: 300ms; }
+@keyframes caesar-message-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes caesar-pulse { 50% { opacity: .3; transform: translateY(-2px); } }
+@media (max-width: 640px) {
+  .caesar-composer input { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .caesar-chat *, .caesar-chat *::before, .caesar-chat *::after { animation: none !important; transition: none !important; }
+}
