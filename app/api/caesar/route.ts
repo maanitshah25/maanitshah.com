@@ -17,7 +17,7 @@ function throttled() {
     windowStart = Date.now();
     requests = 0;
   }
-  return ++requests > 12;
+  return ++requests > 30;
 }
 
 function reply(body: object, status = 200) {
