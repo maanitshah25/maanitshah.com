@@ -1,5 +1,11 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaDiscord, FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaDiscord,
+  FaInstagram,
+  FaSpotify,
+} from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 
 const Contact = () => {
@@ -55,6 +61,14 @@ const Contact = () => {
           aria-label="Discord"
         >
           <FaDiscord />
+        </a>
+        <a
+          href="https://open.spotify.com/user/82eo4p5gg9zsjv9745hyvqald?si=914c536b9f704ad3"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Spotify"
+        >
+          <FaSpotify />
         </a>
       </div>
     </section>
