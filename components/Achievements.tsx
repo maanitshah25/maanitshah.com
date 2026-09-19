@@ -6,7 +6,7 @@ import Coursera3 from "../public/Coursera3-img.png";
 import Coursera4 from "../public/Coursera4-img.png";
 import Coursera5 from "../public/Coursera5-img.png";
 import Coursera6 from "../public/Coursera6-img.png";
-import Coursera7 from "../public/Coursera7-img.png";
+import Claude1 from "../public/Claude1-img.png";
 
 const Achievements = () => {
   return (
@@ -23,15 +23,15 @@ const Achievements = () => {
           <Image src={Coursera2} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera3} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera5} alt="" className="carousel-item rounded-lg" />
+          <Image src={Claude1} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera4} alt="" className="carousel-item rounded-lg" />
-          <Image src={Coursera7} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera6} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera1} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera2} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera3} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera5} alt="" className="carousel-item rounded-lg" />
+          <Image src={Claude1} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera4} alt="" className="carousel-item rounded-lg" />
-          <Image src={Coursera7} alt="" className="carousel-item rounded-lg" />
           <Image src={Coursera6} alt="" className="carousel-item rounded-lg" />
         </div>
       </div>
